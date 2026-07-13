@@ -1,3 +1,10 @@
 # MA Trades
 
-Preview landing page for Max Aulbach and the MA Trades community.
+Private preview landing page for Max Aulbach and the MA Trades community.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
