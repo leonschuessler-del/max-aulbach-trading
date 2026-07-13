@@ -20,6 +20,10 @@
   object-position: 68% center;
 }
 
+#broker {
+  scroll-margin-top: 42vh;
+}
+
 @media (max-width: 800px) {
   .brand-logo {
     width: 88px;
@@ -33,5 +37,9 @@
 
   .hero-image {
     object-position: 66% center;
+  }
+
+  #broker {
+    scroll-margin-top: 36vh;
   }
 }
