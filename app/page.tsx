@@ -27,14 +27,16 @@ export default function Home() {
     <main>
       <header className="nav-wrap">
         <nav className="nav shell" aria-label="Hauptnavigation">
-          <a className="brand" href="#top" aria-label="MA Trades Startseite"><span>MA</span><small>TRADES</small></a>
+          <a className="brand-logo" href="#top" aria-label="Max Aulbach Trade Company Startseite">
+            <Image src="/images/ma-logo-transparent.png" alt="Max Aulbach Trade Company" width={900} height={769} priority />
+          </a>
           <div className="nav-links"><a href="#ablauf">Ablauf</a><a href="#about">Über Max</a><a href="#faq">FAQ</a></div>
           <a className="nav-cta" href={BROKER_URL}>Kostenlos starten <Arrow /></a>
         </nav>
       </header>
 
       <section className="hero" id="top">
-        <Image className="hero-image" src="/images/frankfurt-office.jpg" alt="Trading-Arbeitsplatz mit Blick auf die Frankfurter Skyline" fill priority sizes="100vw" />
+        <Image className="hero-image" src="/images/max-trading-cafe.jpg" alt="Max Aulbach beim Trading am Laptop" fill priority sizes="100vw" />
         <div className="hero-overlay" />
         <div className="hero-content shell">
           <p className="eyebrow"><span /> MA TRADES · KOSTENLOSER ZUGANG</p>
@@ -55,7 +57,7 @@ export default function Home() {
       </section>
 
       <section className="mosaic shell" aria-label="Einblicke in MA Trades">
-        <figure className="mosaic-tall"><Image src="/images/max-trading-cafe.jpg" alt="Max beim Trading am Laptop" fill sizes="(max-width: 800px) 100vw, 50vw" /></figure>
+        <figure className="mosaic-tall"><Image src="/images/audi-hotel.jpeg" alt="Audi vor einem modernen Hotel bei Nacht" fill sizes="(max-width: 800px) 100vw, 50vw" /></figure>
         <figure><Image src="/images/trading-chart-cash.jpg" alt="Trading-Chart auf einem Laptop" fill sizes="(max-width: 800px) 100vw, 25vw" /></figure>
         <figure><Image src="/images/trading-winter.jpg" alt="Trading-Setup in winterlicher Umgebung" fill sizes="(max-width: 800px) 100vw, 25vw" /></figure>
       </section>
@@ -79,7 +81,7 @@ export default function Home() {
         <div className="about-image"><Image src="/images/max-portrait.jpg" alt="Max Aulbach an seinem Arbeitsplatz" fill sizes="(max-width: 800px) 100vw, 45vw" /></div>
       </div></section>
 
-      <section className="gallery shell" aria-label="Lifestyle und Trading"><figure><Image src="/images/ferrari-night.jpg" alt="Ferrari Innenraum bei Nacht" fill sizes="33vw" /></figure><figure><Image src="/images/lifestyle-evening.jpg" alt="Abendlicher Lifestyle-Einblick" fill sizes="33vw" /></figure><figure><Image src="/images/trading-winter.jpg" alt="Mobiler Trading-Arbeitsplatz" fill sizes="33vw" /></figure></section>
+      <section className="gallery shell" aria-label="Lifestyle und Trading"><figure><Image src="/images/ferrari-night.jpg" alt="Ferrari Innenraum bei Nacht" fill sizes="33vw" /></figure><figure><Image src="/images/lifestyle-evening.jpg" alt="Abendlicher Lifestyle-Einblick" fill sizes="33vw" /></figure><figure><Image src="/images/frankfurt-office.jpg" alt="Trading-Arbeitsplatz mit Blick auf die Frankfurter Skyline" fill sizes="33vw" /></figure></section>
 
       <section className="system section shell"><p className="kicker">Das System</p><div className="section-heading"><h2>Learn. Copy.<br /><i>Optimize.</i></h2><p>Einblicke, Setups und Prozesse – aufgebaut für klare Entscheidungen statt leere Versprechen.</p></div><div className="system-grid"><article><b>01</b><h3>Learn</h3><p>Verstehe Märkte durch Analysen, Strategien und transparente Einblicke.</p></article><article><b>02</b><h3>Copy</h3><p>Erhalte strukturierte Setups und entscheide selbst, ob du sie umsetzt.</p></article><article><b>03</b><h3>Optimize</h3><p>Verbessere deine Abläufe mit hilfreichen Tools und klaren Prozessen.</p></article></div></section>
 
@@ -89,7 +91,7 @@ export default function Home() {
 
       <section className="final-cta"><Image src="/images/trading-chart-cash.jpg" alt="" fill sizes="100vw" /><div className="final-overlay" /><div className="shell final-content"><p className="eyebrow"><span /> DEIN NÄCHSTER SCHRITT</p><h2>Bereit,<br /><i>anzufangen?</i></h2><a className="button button-accent" href={BROKER_URL}>Jetzt kostenlos starten <Arrow /></a></div></section>
 
-      <footer><div className="shell footer-top"><div className="brand brand-footer"><span>MA</span><small>TRADES</small></div><p>Eine Trading-Community, aufgebaut auf Transparenz, klaren Strategien und kontinuierlicher Weiterentwicklung.</p><div><a href="https://instagram.com/maxaulbach" target="_blank" rel="noreferrer">Instagram</a><a href={TELEGRAM_URL} target="_blank" rel="noreferrer">Telegram</a></div></div><div className="shell legal"><p>© 2026 MA Trades™ · Alle Rechte vorbehalten.</p><p>Trading mit CFDs und Forex ist mit erheblichen Risiken verbunden und kann zum vollständigen Verlust des eingesetzten Kapitals führen. Alle Inhalte dienen ausschließlich Informations- und Bildungszwecken und stellen keine Anlageberatung, Handelsempfehlung oder Gewinnzusage dar. Vergangene Ergebnisse sind keine Garantie für zukünftige Erfolge.</p></div></footer>
+      <footer><div className="shell footer-top"><div className="brand-logo brand-logo-footer"><Image src="/images/ma-logo-transparent.png" alt="Max Aulbach Trade Company" width={900} height={769} /></div><p>Eine Trading-Community, aufgebaut auf Transparenz, klaren Strategien und kontinuierlicher Weiterentwicklung.</p><div><a href="https://www.instagram.com/max_aulbach/" target="_blank" rel="noreferrer">Instagram · @Max_Aulbach</a><a href={TELEGRAM_URL} target="_blank" rel="noreferrer">Telegram</a></div></div><div className="shell legal"><p>© 2026 MA Trades™ · Alle Rechte vorbehalten.</p><p>Trading mit CFDs und Forex ist mit erheblichen Risiken verbunden und kann zum vollständigen Verlust des eingesetzten Kapitals führen. Alle Inhalte dienen ausschließlich Informations- und Bildungszwecken und stellen keine Anlageberatung, Handelsempfehlung oder Gewinnzusage dar. Vergangene Ergebnisse sind keine Garantie für zukünftige Erfolge.</p></div></footer>
     </main>
   );
 }
