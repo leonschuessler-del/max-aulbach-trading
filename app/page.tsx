@@ -36,7 +36,7 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <Image className="hero-image" src="/images/max-trading-cafe.jpg" alt="Max Aulbach beim Trading am Laptop" fill priority sizes="100vw" />
+        <Image className="hero-image" src="/images/max-hero-laptop.jpg" alt="Max Aulbach beim Trading am Laptop" fill priority sizes="100vw" />
         <div className="hero-overlay" />
         <div className="hero-content shell">
           <p className="eyebrow"><span /> MA TRADES · KOSTENLOSER ZUGANG</p>
