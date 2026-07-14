@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const BROKER_URL = "#broker"; // Vantage referral link is inserted here.
+const BROKER_URL = "https://www.vantagemarkets.com/open-live-account/?affid=MzIzNzA2NzE=&invitecode=8RDcF8cx";
 const TELEGRAM_URL = "https://t.me/maxaulbach";
 
 const steps = [
@@ -31,7 +31,7 @@ export default function Home() {
             <Image src="/images/ma-logo-transparent.png" alt="Max Aulbach Trade Company" width={900} height={769} priority />
           </a>
           <div className="nav-links"><a href="#ablauf">Ablauf</a><a href="#about">Über Max</a><a href="#faq">FAQ</a></div>
-          <a className="nav-cta" href={BROKER_URL}>Kostenlos starten <Arrow /></a>
+          <a className="nav-cta" href={BROKER_URL} target="_blank" rel="sponsored noreferrer noopener">Kostenlos starten <Arrow /></a>
         </nav>
       </header>
 
@@ -43,7 +43,7 @@ export default function Home() {
           <h1>Ich trade.<br />Ich teile.<br /><em>Du entscheidest.</em></h1>
           <p className="hero-copy">Erhalte Einblicke in meine Setups, Analysen und Trades – transparent, nachvollziehbar und direkt auf dein Handy.</p>
           <div className="hero-actions">
-            <a className="button button-light" href={BROKER_URL}>Jetzt kostenlos starten <Arrow /></a>
+            <a className="button button-light" href={BROKER_URL} target="_blank" rel="sponsored noreferrer noopener">Jetzt kostenlos starten <Arrow /></a>
             <a className="text-link" href="#ablauf">So funktioniert&apos;s <span>↓</span></a>
           </div>
           <div className="trust-row"><span>Keine Abonnements</span><span>Keine versteckten Kosten</span><span>Volle Kontrolle</span></div>
@@ -65,7 +65,7 @@ export default function Home() {
       <section className="process section" id="ablauf">
         <div className="shell"><p className="kicker kicker-light">In vier Schritten</p><div className="section-heading"><h2>So bekommst du<br /><i>deinen Zugang.</i></h2><p>Ein klarer Ablauf. Kein Abo. Keine versteckten Community-Gebühren.</p></div>
           <div className="steps">{steps.map(([number,title,text]) => <article className="step" key={number}><span>{number}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
-          <div className="process-actions" id="broker"><a className="button button-accent" href={BROKER_URL}>Vantage-Konto eröffnen <Arrow /></a><small>Der persönliche Vantage-Referral-Link wird hier eingesetzt.</small></div>
+          <div className="process-actions" id="broker"><a className="button button-accent" href={BROKER_URL} target="_blank" rel="sponsored noreferrer noopener">Vantage-Konto eröffnen <Arrow /></a></div>
         </div>
       </section>
 
@@ -89,7 +89,7 @@ export default function Home() {
 
       <section className="faq section shell" id="faq"><p className="kicker">Gut zu wissen</p><div className="faq-grid"><h2>Häufige<br /><i>Fragen.</i></h2><div>{faqs.map(([q,a],i) => <details key={q} open={i===0}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div></div></section>
 
-      <section className="final-cta"><Image src="/images/trading-chart-cash.jpg" alt="" fill sizes="100vw" /><div className="final-overlay" /><div className="shell final-content"><p className="eyebrow"><span /> DEIN NÄCHSTER SCHRITT</p><h2>Bereit,<br /><i>anzufangen?</i></h2><a className="button button-accent" href={BROKER_URL}>Jetzt kostenlos starten <Arrow /></a></div></section>
+      <section className="final-cta"><Image src="/images/trading-chart-cash.jpg" alt="" fill sizes="100vw" /><div className="final-overlay" /><div className="shell final-content"><p className="eyebrow"><span /> DEIN NÄCHSTER SCHRITT</p><h2>Bereit,<br /><i>anzufangen?</i></h2><a className="button button-accent" href={BROKER_URL} target="_blank" rel="sponsored noreferrer noopener">Jetzt kostenlos starten <Arrow /></a></div></section>
 
       <footer><div className="shell footer-top"><div className="brand-logo brand-logo-footer"><Image src="/images/ma-logo-transparent.png" alt="Max Aulbach Trade Company" width={900} height={769} /></div><p>Eine Trading-Community, aufgebaut auf Transparenz, klaren Strategien und kontinuierlicher Weiterentwicklung.</p><div><a href="https://www.instagram.com/max_aulbach/" target="_blank" rel="noreferrer">Instagram · @Max_Aulbach</a><a href={TELEGRAM_URL} target="_blank" rel="noreferrer">Telegram</a></div></div><div className="shell legal"><p>© 2026 MA Trades™ · Alle Rechte vorbehalten.</p><p>Trading mit CFDs und Forex ist mit erheblichen Risiken verbunden und kann zum vollständigen Verlust des eingesetzten Kapitals führen. Alle Inhalte dienen ausschließlich Informations- und Bildungszwecken und stellen keine Anlageberatung, Handelsempfehlung oder Gewinnzusage dar. Vergangene Ergebnisse sind keine Garantie für zukünftige Erfolge.</p></div></footer>
     </main>
